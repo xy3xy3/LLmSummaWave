@@ -1,0 +1,6 @@
+.vscode/
+res/
+audio/
+tmp/
+**/__pycache__/*
+config.py
