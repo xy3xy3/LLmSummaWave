@@ -11,8 +11,12 @@ def process_audio_files(audio_dir, res_dir, tmp_dir):
     :param res_dir: 结果文件夹路径
     :param tmp_dir: 临时文件夹路径
     """
+    if not os.path.exists(audio_dir):
+        os.makedirs(audio_dir)
     if not os.path.exists(res_dir):
         os.makedirs(res_dir)
+    if not os.path.exists(tmp_dir):
+        os.makedirs(tmp_dir)
 
     api = openaiApi()
 
